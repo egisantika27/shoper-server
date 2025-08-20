@@ -1,0 +1,12 @@
+{
+  "version": "1.0.1",
+  "apiPatterns": [
+    "/api/v4/"
+  ],
+  "selectors": {
+    "productCard": "div.wujux8, div[data-sqe=item]",
+    "priceElement": "div.text-shopee-primary, ._3_N-52",
+    "soldElement": "div.text-shopee-black87, .OwmB_O",
+    "detailPriceSection": ".product-price--current, .pmmxKx, div[class*=IFdRIb], ._2Shl1j"
+  }
+}
