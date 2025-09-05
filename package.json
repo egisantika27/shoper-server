@@ -1,16 +1,11 @@
 {
   "name": "shoper-server",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Serverless API for SHOPER Extension configuration",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^5.1.0"
-  }
+  "author": "Egi Santika",
+  "license": "ISC"
 }
