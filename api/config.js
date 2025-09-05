@@ -1,20 +1,27 @@
 // /api/config.js
 
-export default function handler(req, res) {
-  // --- KONTROL CORS: Ini adalah "surat izin" yang menyelesaikan error Anda ---
-  res.setHeader('Access-Control-Allow-Origin', '*'); // Izinkan semua domain
-  res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+// [DIUBAH] Gunakan format Vercel Edge Function yang lebih modern dan kompatibel
+export const config = {
+  runtime: 'edge',
+};
+
+export default function handler(request) {
+  // --- KONTROL CORS: Memberi izin akses ---
+  // Ini adalah "surat izin" yang akan menyelesaikan error CORS Anda
+  const headers = {
+    'Access-Control-Allow-Origin': '*', // Izinkan semua origin
+    'Access-Control-Allow-Methods': 'GET, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+  };
 
   // Menangani permintaan "preflight" OPTIONS dari browser
-  if (req.method === 'OPTIONS') {
-    return res.status(200).end();
+  if (request.method === 'OPTIONS') {
+    return new Response(null, { status: 204, headers });
   }
 
-  // --- DATA KONFIGURASI ANDA ---
-  // Di sinilah konten dari file config.json Anda sekarang berada.
+  // --- DATA KONFIGURASI LENGKAP ---
   const configData = {
-    "version": "1.2.0",
+    "version": "1.2.1", // Naikkan versi untuk menandai perubahan
     "apiPatterns": [
       "/api/v4/"
     ],
@@ -32,13 +39,19 @@ export default function handler(req, res) {
       "anotherNewFeature": false
     },
     "dynamicUrls": {
-		"landingPageBaseUrl": "https://shoper-beranda.vercel.app",
+        "landingPageBaseUrl": "https://shoper-beranda.vercel.app",
         "tutorial": "https://shoper.myscalev.com/shoper-shopee-product-research-tool",
         "buyLicense": "https://egi-santika.myr.id/pl/lisensi-lifetime-shoper-52870",
         "contactDeveloper": "https://wa.me/628980007065"
     }
   };
 
-  // Kirim data konfigurasi sebagai respons dengan format JSON
-  return res.status(200).json(configData);
+  // Kirim data konfigurasi sebagai respons JSON, DENGAN header CORS
+  return new Response(JSON.stringify(configData), {
+    status: 200,
+    headers: {
+      'Content-Type': 'application/json',
+      ...headers, // Gabungkan header CORS di sini
+    },
+  });
 }
