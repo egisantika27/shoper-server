@@ -38,9 +38,21 @@ export default function handler(request) {
       "storeAnalyzerEnabled": false,
       "anotherNewFeature": false
     },
+	// Kredensial untuk Facebook Ads
 	"metaCredentials": {
         "pixelId": "1289968729543730",
         "accessToken": "EAASnNwd76JMBPeTZBetttpTh8zhGeZAqUDnqumD9yzzC3fiRCD5Uyxl57HEuOkWaQvJpC3CqhbtU8Qk4EUC5ZCnYud1KrEUgZCD6yKEPRE9bTlzUHVZCP9pd8WdS2amCSDe1r4frr90yEXPrLQ5kMCEw7D2KVREQJIwUOBUs1CXyIlYMZCdeWoJrDbIOr2Fgy3YQZDZD"
+    },
+	// Kredensial untuk TikTok Ads
+    "tiktokCredentials": {
+      "pixelId": "YOUR_TIKTOK_PIXEL_ID", // <-- Ganti dengan ID Anda
+      "accessToken": "YOUR_TIKTOK_ACCESS_TOKEN" // <-- Ganti dengan Token Anda
+    },
+    // Kredensial untuk Google Ads
+    "googleCredentials": {
+      "conversionId": "AW-17541975210", // ID dari screenshot Anda
+      "leadLabel": "YOUR_LEAD_CONVERSION_LABEL", // <-- Ganti dengan Label Konversi Lead
+      "purchaseLabel": "YOUR_PURCHASE_CONVERSION_LABEL" // <-- Ganti dengan Label Konversi Purchase
     },
     "dynamicUrls": {
         "landingPageBaseUrl": "https://shoper-beranda.vercel.app",
