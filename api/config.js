@@ -38,6 +38,10 @@ export default function handler(request) {
       "storeAnalyzerEnabled": false,
       "anotherNewFeature": false
     },
+	"metaCredentials": {
+        "pixelId": "1289968729543730",
+        "accessToken": "EAASnNwd76JMBPeTZBetttpTh8zhGeZAqUDnqumD9yzzC3fiRCD5Uyxl57HEuOkWaQvJpC3CqhbtU8Qk4EUC5ZCnYud1KrEUgZCD6yKEPRE9bTlzUHVZCP9pd8WdS2amCSDe1r4frr90yEXPrLQ5kMCEw7D2KVREQJIwUOBUs1CXyIlYMZCdeWoJrDbIOr2Fgy3YQZDZD"
+    },
     "dynamicUrls": {
         "landingPageBaseUrl": "https://shoper-beranda.vercel.app",
         "tutorial": "https://shoper.myscalev.com/shoper-shopee-product-research-tool",
