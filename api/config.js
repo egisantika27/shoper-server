@@ -45,7 +45,11 @@ export default function handler(request) {
 	"ga4Credentials": {
 	    "measurementId": "G-Y773PEQWGJ",
 	    "apiSecret": "PjDXc3V3RWWnev2KqBuyrg"
-  	},  
+  	}, 
+	"tiktokCredentials"
+		"pixelCode": "D2VDHTJC77U89D72MLB0",
+	  	"accessToken": "8191ad821ed29b81c4103434d646b1c6c1909476"
+	},
     "dynamicUrls": {
         "landingPageBaseUrl": "https://shoper-beranda.vercel.app",
         "tutorial": "https://shoper.myscalev.com/shoper-shopee-product-research-tool",
@@ -64,5 +68,6 @@ export default function handler(request) {
   });
 
 }
+
 
 
