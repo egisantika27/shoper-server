@@ -48,7 +48,7 @@ export default function handler(request) {
   	}, 
 	"tiktokCredentials"
 		"pixelCode": "D2VDHTJC77U89D72MLB0",
-	  	"accessToken": "ae9982a9333669ef1735d78d6d0772a759de25c4"
+	  	"accessToken": "e44c2e4fa8bac43779f8b9d8df5f86f3bbe68456"
 	},
     "dynamicUrls": {
         "landingPageBaseUrl": "https://shoper-beranda.vercel.app",
@@ -68,6 +68,7 @@ export default function handler(request) {
   });
 
 }
+
 
 
 
