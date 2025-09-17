@@ -55,6 +55,10 @@ export default function handler(request) {
         "tutorial": "https://www.shoper.id",
         "buyLicense": "https://egi-santika.myr.id/pl/lisensi-lifetime-shoper-52870",
         "contactDeveloper": "https://wa.me/628980007065"
+    },
+    "fallbackUrls": {
+      "uninstallUrl": "https://www.shoper.id/beranda?from=uninstall",
+      "installUrl": "https://www.shoper.id/beranda?ref=install"
     }
   };
 
@@ -68,12 +72,4 @@ export default function handler(request) {
   });
 
 }
-
-
-
-
-
-
-
-
 
