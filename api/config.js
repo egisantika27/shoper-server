@@ -46,7 +46,7 @@ export default function handler(request) {
 	    "measurementId": "G-Y773PEQWGJ",
 	    "apiSecret": "PjDXc3V3RWWnev2KqBuyrg"
   	}, 
-	"tiktokCredentials"
+	"tiktokCredentials": {
 		"pixelCode": "D2VDHTJC77U89D72MLB0",
 	  	"accessToken": "e44c2e4fa8bac43779f8b9d8df5f86f3bbe68456"
 	},
@@ -68,6 +68,7 @@ export default function handler(request) {
   });
 
 }
+
 
 
 
