@@ -52,7 +52,7 @@ export default function handler(request) {
 	},
     "dynamicUrls": {
         "landingPageBaseUrl": "https://shoper-beranda.vercel.app",
-        "tutorial": "https://shoper.myscalev.com/shoper-shopee-product-research-tool",
+        "tutorial": "https://www.shoper.id/",
         "buyLicense": "https://egi-santika.myr.id/pl/lisensi-lifetime-shoper-52870",
         "contactDeveloper": "https://wa.me/628980007065"
     }
@@ -68,6 +68,7 @@ export default function handler(request) {
   });
 
 }
+
 
 
 
