@@ -51,7 +51,7 @@ export default function handler(request) {
 	  	"accessToken": "e44c2e4fa8bac43779f8b9d8df5f86f3bbe68456"
 	},
     "dynamicUrls": {
-        "landingPageBaseUrl": "https://shoper-beranda.vercel.app",
+        "landingPageBaseUrl": "https://www.shoper.id/beranda",
         "tutorial": "https://www.shoper.id/",
         "buyLicense": "https://egi-santika.myr.id/pl/lisensi-lifetime-shoper-52870",
         "contactDeveloper": "https://wa.me/628980007065"
@@ -68,6 +68,7 @@ export default function handler(request) {
   });
 
 }
+
 
 
 
