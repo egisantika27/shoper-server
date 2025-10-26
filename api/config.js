@@ -23,7 +23,8 @@ export default function handler(request) {
   const configData = {
     "version": "1.2.1", // Naikkan versi untuk menandai perubahan
     "apiPatterns": [
-      "/api/v4/"
+      "/api/v4/",
+	  "/api/v2/item/get_ratings"
     ],
     "selectors": {
       "detailPriceSection": ".product-price--current, .pmmxKx, div[class*=IFdRIb], ._2Shl1j",
@@ -74,5 +75,6 @@ export default function handler(request) {
   });
 
 }
+
 
 
