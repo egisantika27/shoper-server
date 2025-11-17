@@ -21,19 +21,35 @@ export default function handler(request) {
 
   // --- DATA KONFIGURASI LENGKAP ---
   const configData = {
-    "version": "1.2.1", // Naikkan versi untuk menandai perubahan
-    "apiPatterns": [
-      "/api/v4/",
-	  "/api/v2/item/get_ratings"
-    ],
+    "version": "1.3.0", // Versi dinaikkan untuk menandai perubahan selector
+    "apiPatterns": [
+      "/api/v4/",
+	  "/api/v2/item/get_ratings"
+    ],
     "selectors": {
+	  // --- Halaman Detail Produk ---
       "detailPriceSection": ".product-price--current, .pmmxKx, div[class*=IFdRIb], ._2Shl1j",
-      "productCardLink": "a[href*='-i.']",
+      // ✅ BARU: Penanda/Anchor Judul Produk (Mobile)
+      "detailTitleSectionMobile": ".ezTNz_",
+	  // --- Halaman Kategori/Pencarian ---
+	  "productCardLink": "a[href*='-i.']",
       "productCardInfoContainer": "div[class*='flex-col']",
-      "similarProductContainer": "div.miIYkb",
-      "analyzerProductCard": "div.wujux8, div[data-sqe=item]",
-      "analyzerPriceElement": "div.text-shopee-primary, ._3_N-52",
-      "analyzerSoldElement": "div.text-shopee-black87, .OwmB_O"
+      // --- Halaman Produk Serupa (Analyzer) ---
+	  "similarProductContainer": "div.miIYkb", // Desktop Anchor
+	  // ✅ BARU: Penanda/Anchor "Produk Serupa" (Mobile)
+      "analyzerAnchorMobile": ".KFL3oh",
+
+      "analyzerProductCard": "div.wujux8, div[data-sqe=item]", // Desktop Card
+      // ✅ BARU: Kartu Produk Analyzer (Mobile)
+      "analyzerProductCardMobile": ".item-card-list__item-card-wrapper",
+	  
+	  "analyzerPriceElement": "div.text-shopee-primary, ._3_N-52", // Desktop Card
+	  // ✅ BARU: Harga Analyzer (Mobile)
+      "analyzerPriceElementMobile": ".text-shopee-primary",
+	  
+	  "analyzerSoldElement": "div.text-shopee-black87, .OwmB_O", // Desktop Sold
+      // ✅ BARU: Terjual Analyzer (Mobile)
+      "analyzerSoldElementMobile": ".text-shopee-black87"
     },
     "featureFlags": {
       "storeAnalyzerEnabled": false,
@@ -75,6 +91,3 @@ export default function handler(request) {
   });
 
 }
-
-
-
