@@ -78,6 +78,13 @@ export default function handler(request) {
       "installUrl": "https://www.shoper.id/beranda?ref=install",
 	  "buyLicense": "https://egi-santika.myr.id/pl/lisensi-lifetime-shoper-52870",
 	  "landingPageBaseUrl": "https://www.shoper.id/beranda"
+    },
+	"ratingScraper": {
+    "maxPages": 50,
+    "delayMs": 1200,
+    "selectors": {
+        "nextButton": ".shopee-page-controller .shopee-icon-button--right, button.shopee-icon-button--right",
+        "disabledClass": "shopee-icon-button--disabled"
     }
   };
 
