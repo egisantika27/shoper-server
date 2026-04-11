@@ -24,7 +24,8 @@ export default function handler(request) {
     "version": "1.3.0", // Versi dinaikkan untuk menandai perubahan selector
     "apiPatterns": [
       "/api/v4/",
-	  "/api/v2/item/get_ratings"
+	  "/api/v2/item/get_ratings",
+	  "get_shop_ratings_new"
     ],
 	 // ✅ Config untuk Rating Scraper
     "ratingScraper": {
