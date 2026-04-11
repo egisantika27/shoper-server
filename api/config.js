@@ -29,7 +29,7 @@ export default function handler(request) {
     ],
 	 // ✅ Config untuk Rating Scraper
     "ratingScraper": {
-      "maxPages": 10,
+      "maxPages": 200,
       "delayMs": 1200,
       "selectors": {
         "nextButton": ".shopee-page-controller .shopee-icon-button--right, button.shopee-icon-button--right",
