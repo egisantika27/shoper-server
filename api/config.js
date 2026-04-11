@@ -85,7 +85,7 @@ export default function handler(request) {
     "selectors": {
         "nextButton": ".shopee-page-controller .shopee-icon-button--right, button.shopee-icon-button--right",
         "disabledClass": "shopee-icon-button--disabled"
-    }
+    },
   };
 
   // Kirim data konfigurasi sebagai respons JSON, DENGAN header CORS
