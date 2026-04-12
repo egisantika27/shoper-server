@@ -32,8 +32,9 @@ export default function handler(request) {
       "maxPages": 50,
       "delayMs": 1200,
       "selectors": {
-        "nextButton": ".shopee-page-controller .shopee-icon-button--right, button.shopee-icon-button--right",
-        "disabledClass": "shopee-icon-button--disabled"
+        "containerTarget": ".product-rating-overview",
+      	"nextButton": ".shopee-page-controller .shopee-icon-button--right, button.shopee-icon-button--right",
+     	"disabledClass": "shopee-icon-button--disabled"
       }
     },
     "selectors": {
