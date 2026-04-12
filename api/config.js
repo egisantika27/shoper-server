@@ -29,7 +29,7 @@ export default function handler(request) {
     ],
 	 // ✅ Config untuk Rating Scraper
     "ratingScraper": {
-      "maxPages": 166,
+      "maxPages": 6,
       "delayMs": 1200,
       "selectors": {
         "containerTarget": ".product-rating-overview",
