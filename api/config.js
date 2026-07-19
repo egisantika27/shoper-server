@@ -43,7 +43,7 @@ export default function handler(request) {
       // ✅ BARU: Penanda/Anchor Judul Produk (Mobile)
       "detailTitleSectionMobile": ".ezTNz_",
 	  // --- Halaman Kategori/Pencarian ---
-	  "productCardLink": "div[role='group'][aria-label='Product card']",
+	  "productCardLink": "a[href*='-i.']",
       "productCardInfoContainer": "div[class*='flex-col']",
       // --- Halaman Produk Serupa (Analyzer) ---
 	  "similarProductContainer": ".VwiYq1", // Desktop Anchor
