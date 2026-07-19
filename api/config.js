@@ -46,7 +46,7 @@ export default function handler(request) {
 	  "productCardLink": "a[href*='-i.']",
       "productCardInfoContainer": "div[class*='flex-col']",
       // --- Halaman Produk Serupa (Analyzer) ---
-	  "similarProductContainer": ".L6zW27", // Desktop Anchor
+	  "similarProductContainer": ".VwiYq1", // Desktop Anchor
 	  // ✅ BARU: Penanda/Anchor "Produk Serupa" (Mobile)
       "analyzerAnchorMobile": ".NtG0vm, .KFL3oh",
 
