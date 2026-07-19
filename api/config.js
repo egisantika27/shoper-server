@@ -39,7 +39,7 @@ export default function handler(request) {
     },
     "selectors": {
 	  // --- Halaman Detail Produk ---
-      "detailPriceSection": ".product-price--current, .pmmxKx, div[class*=IFdRIb], ._2Shl1j",
+      "detailPriceSection": "section[aria-live='polite']",
       // ✅ BARU: Penanda/Anchor Judul Produk (Mobile)
       "detailTitleSectionMobile": ".ezTNz_",
 	  // --- Halaman Kategori/Pencarian ---
