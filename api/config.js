@@ -46,11 +46,11 @@ export default function handler(request) {
 	  "productCardLink": "a[href*='-i.']",
       "productCardInfoContainer": "div[class*='flex-col']",
       // --- Halaman Produk Serupa (Analyzer) ---
-	  "similarProductContainer": ".NtG0vm, div.miIYkb", // Desktop Anchor
+	  "similarProductContainer": ".L6zW27", // Desktop Anchor
 	  // ✅ BARU: Penanda/Anchor "Produk Serupa" (Mobile)
       "analyzerAnchorMobile": ".NtG0vm, .KFL3oh",
 
-      "analyzerProductCard": ".NtG0vm, div.wujux8, div[data-sqe=item]", // Desktop Card
+      "analyzerProductCard": ".NtG0vm", // Desktop Card
       // ✅ BARU: Kartu Produk Analyzer (Mobile)
       "analyzerProductCardMobile": ".NtG0vm, .item-card-list__item-card-wrapper",
 	  
