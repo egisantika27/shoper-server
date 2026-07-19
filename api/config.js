@@ -46,13 +46,13 @@ export default function handler(request) {
 	  "productCardLink": "a[href*='-i.']",
       "productCardInfoContainer": "div[class*='flex-col']",
       // --- Halaman Produk Serupa (Analyzer) ---
-	  "similarProductContainer": "div.miIYkb", // Desktop Anchor
+	  "similarProductContainer": ".NtG0vm, div.miIYkb", // Desktop Anchor
 	  // ✅ BARU: Penanda/Anchor "Produk Serupa" (Mobile)
-      "analyzerAnchorMobile": ".KFL3oh",
+      "analyzerAnchorMobile": ".NtG0vm, .KFL3oh",
 
-      "analyzerProductCard": "div.wujux8, div[data-sqe=item]", // Desktop Card
+      "analyzerProductCard": ".NtG0vm, div.wujux8, div[data-sqe=item]", // Desktop Card
       // ✅ BARU: Kartu Produk Analyzer (Mobile)
-      "analyzerProductCardMobile": ".item-card-list__item-card-wrapper",
+      "analyzerProductCardMobile": ".NtG0vm, .item-card-list__item-card-wrapper",
 	  
 	  "analyzerPriceElement": "div.text-shopee-primary, ._3_N-52", // Desktop Card
 	  // ✅ BARU: Harga Analyzer (Mobile)
